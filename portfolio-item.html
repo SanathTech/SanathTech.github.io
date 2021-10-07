@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>React Movie DB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/devjane.png" alt="">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="portfolio-intro" id="home">
+        <h1 class="portfolio-section__title portfolio-section__title--intro">
+            React <strong>Movie Database</strong>
+        </h1>
+        <p class="portfolio-section__subtitle portfolio-section__subtitle--intro">react js project</p>
+        <img src="img/react-movie-database-01.jpg" alt="" class="portfolio-intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>For this project, I used React JS and The Movie DB API calls to create a dynamic movie database.</p>
+        <img src="img/react-movie-database-01.jpg" alt="">
+        <p>As you can see, the home page consists of a Hero image displaying the current most popular movie according to
+            the database. It then proceeds to list all the current Popular Movies with their poster art for a kind of
+            "Netflix" feel.</p>
+        <img src="img/react-movie-database-02.jpg" alt="">
+        <p>As a user you can browse the selection available, and even click on an of the films to view more information
+            about them.</p>
+        <img src="img/react-movie-database-03.jpg" alt="">
+        <p>When you click on a movie, you will see some information about the movie as well as the option to watch the
+            trailer.</p>
+        <img src="img/react-movie-database-04.jpg" alt="">
+        <p>If you scroll down, you can even see a list of actors and their roles in the film, accompanied by photos
+            where available. Lastly, users also have the option to search the database for films of their choice.</p>
+        <img src="img/react-movie-database-05.jpg" alt="">
+        <p>As you can see, users are able to view all the Spider-Man films when searching for "Spider"</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:hello@sanath.tech" class="footer__link">hello@sanath.tech</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/sanath-punchibandage">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://www.facebook.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
