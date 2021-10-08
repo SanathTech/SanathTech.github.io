@@ -140,11 +140,11 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 160px;
 }
 
-.logo a {
-    text-decoration: none;
+.logo img {
+    max-height: 21px;
 }
 
 .nav {
