@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>React TV Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/sanath-tech.png" alt="">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="portfolio-intro" id="home">
+        <h1 class="portfolio-section__title portfolio-section__title--intro">
+            React <strong>TV Series List</strong>
+        </h1>
+        <p class="portfolio-section__subtitle portfolio-section__subtitle--intro">react js project</p>
+        <img src="img/tv-series-01.jpg" alt="" class="portfolio-intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>This was one of my first React JS projects, hence why the UI is very minimal. None the less, it uses a TV database API to fetch information about any tv show you wish to lookup.</p>
+        <img src="img/tv-series-01.jpg" alt="">
+        <p>For example, if you search up 'Game of Thrones', the database will return a list of the top 6 matches that are related to the search term.</p>
+        <img src="img/tv-series-02.jpg" alt="">
+        <p>Selecting any of the shows will take you to a page that displays some basic information about the tv show, including the cover art.</p>
+        <img src="img/tv-series-03.jpg" alt="">
+        <p>Although this project is fairly simple looking, there is a lot going on behind the scenes. From API calls, to the simulation of different webpages using 'React Router DOM', this website uses many fundamental react js features that serve as a stepping stone for larger and more complex projects in the future.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:hello@sanath.tech" class="footer__link">hello@sanath.tech</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/sanath-punchibandage">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://www.facebook.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
