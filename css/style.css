@@ -140,7 +140,11 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 160px;
+}
+
+.logo img {
+    max-height: 21px;
 }
 
 .nav {
@@ -541,6 +545,7 @@ header {
     padding: 0 2em 2em;
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
 .portfolio-item-individual p {
@@ -551,7 +556,5 @@ header {
 
 .portfolio-item-individual img {
     padding-bottom: 1em;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
 }
