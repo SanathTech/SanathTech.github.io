@@ -1,9 +1,160 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Sanath's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
 <body>
-  <h1>SANATH PUNCHIBANDAGE</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/sanath-tech.png" alt="">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am<strong>Sanath Punchibandage</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">systems engineer</p>
+        <img src="img/sanath-square-01.jpeg" alt="a picture of Sanath smiling" class="intro__img">
+        <img src="img/sanath-01.jpeg" alt="a picture of Sanath smiling" class="intro__img2">
+    </section>
+
+    <!-- My Service -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I Do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>AWS Cloud</h3>
+                <p>As a System's Engineer, I help our clients save time and money maintaining outdated servers, by
+                    transferring all their data and applications to the cloud using Amazon's global infrastructure. This
+                    allows them to get back to building better products and services for their customers.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Web/App Development</h3>
+                <p>Nowadays, every business and company has a website or an application (or both!), as they are not only
+                    powerful tools for attracting new customers, but they can also be used to provide all kinds of
+                    services. Whether you need a simple website for your coffee shop, or have a million-dollar app
+                    idea, I've got you covered.
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>E-Projects</h3>
+                <p>In my spare time I like to tinker with circuits so that I can learn how computers work,
+                    as well as to build fun or useful devices. If you can think it, there's probably a Youtube tutorial
+                    on it. From Smart Homes to Electric Vehicles, the possibilities are endless.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">systems engineer based in Melbourne</p>
+
+        <div class="about-me__body">
+            <p>Inspired by the likes of Iron Man and Elon Musk, I am constantly looking for ways to use engineering to
+                solve problems in both our daily lives, as well as on a global scale - such as climate change, disease,
+                and poverty. From renewable energy to artificial intelligence, I love to learn about innovative
+                technologies, and how they are being used in a variety of applications.</p>
+            <p>I chose to study Mechatronics Engineering, as I could learn to combine knowledge from different fields
+                such as electrical, software and mechanical engineering to produce unique and innovative solutions. To
+                add to my "Jack of all Trades" approach, I also studied Finance to learn the nuances of business, and to
+                determine how economically viable my crazy ideas would be.</p>
+        </div>
+
+        <img src="img/sanath-02.png" alt="Jane leaning against a bus" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="portfolio-item-01.html" class="portfolio__item">
+                <img src="img/react-movie-database-01.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="portfolio-item-02.html" class="portfolio__item">
+                <img src="img/dojo-blogs-01.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="portfolio-item-03.html" class="portfolio__item">
+                <img src="img/task-tracker-03.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a href="portfolio-item-04.html" class="portfolio__item">
+                <img src="img/tv-series-01.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:hello@sanath.tech" class="footer__link">hello@sanath.tech</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/SanathTech">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/sanath-punchibandage">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://www.facebook.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
 </body>
- 
+
 </html>
